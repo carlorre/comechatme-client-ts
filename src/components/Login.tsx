@@ -32,7 +32,7 @@ const Login = () => {
     <main>
       <div className="login-container">
         <img className="logo" src="./images/chat-logo.png" alt="" />
-        <form className="login-form-container" onSubmit={(e) => handleSubmit(e)}>
+        <form autoComplete="off" className="login-form-container" onSubmit={(e) => handleSubmit(e)}>
           <input className="login-input" onChange={(e) => setUsername(e.target.value)} type="text" name="username" placeholder="Choose a username" maxLength={14} />
           <input className="login-button" type="submit" value="Enter Chat" />
           <p>{error}</p>
