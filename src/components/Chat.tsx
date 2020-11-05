@@ -74,7 +74,7 @@ const Chat = () => {
           </div>
         ))}
       </div>
-      <form className="message-input-container" onSubmit={(e) => sendMessage(e)}>
+      <form autoComplete="off" className="message-input-container" onSubmit={(e) => sendMessage(e)}>
         <input className="message-input" onChange={(e) => setMessage(e.target.value)} type="text" name="name" value={message} maxLength={100} placeholder="Your message" />
         <button aria-label="Send Message" className="submit-button" type="submit">
           <i className="fas fa-arrow-right" />
